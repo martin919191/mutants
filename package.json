@@ -1,0 +1,24 @@
+{
+  "name": "mutants",
+  "version": "1.0.0",
+  "description": "Application to help Magneto find new mutants based on DNA sequence.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/mutants.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin919191/mutants.git"
+  },
+  "author": "Martín Isusi Seff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martin919191/mutants/issues"
+  },
+  "homepage": "https://github.com/martin919191/mutants#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
