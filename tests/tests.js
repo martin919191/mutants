@@ -19,7 +19,8 @@ function runTestBatch(batchCount, batchNbr) {
             var dnaSequence = dnaSequences[randomIndex];
             request.post(
                 {
-                    url: "https://project-mutants.uc.r.appspot.com/mutant",
+                    //url: "https://project-mutants.uc.r.appspot.com/mutant",
+                    url: "http://localhost:3001/mutant",
                     method: "POST",
                     json: true,
                     body: {
