@@ -4,7 +4,8 @@
   "description": "Application to help Magneto find new mutants based on DNA sequence.",
   "main": "index.js",
   "scripts": {
-    "start": "node lib/mutants.js"
+    "start": "node lib/mutants.js",
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,10 @@
   "dependencies": {
     "@google-cloud/bigquery": "^5.5.0",
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
+    "mocha": "^8.2.1",
     "request": "^2.88.2",
     "sqlite": "^4.0.17",
     "sqlite3": "^5.0.0"
