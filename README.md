@@ -63,6 +63,26 @@ export DBTYPE=BIGQUERY
 npm start
 ```
 To run with BigQuery engine, it is required to be in a Google Cloud environment, and to set up a dataset named `mutant_data`.
+
+To test a local instante, run the following commands (change the port in URL in case it was changed before running the application):
+
+```
+# Get application stats
+curl -X GET https://localhost:3001/stats 
+
+# Test application with a mutant DNA
+curl -X POST \
+    -d '{"dna": ["ATGCGA","CAGTGC","TTATGT","AGAAGG","CTCCTA","TCACTG"]}' \
+    -H 'Content-Type: application/json' \
+    https://localhost:3001/mutant
+    
+# Test application with a human DNA
+curl -X POST \
+    -d '{"dna": ["CTGCCA", "CAGTGC", "TTATGT", "AGAAGG", "CTCCTA", "TCACTG"]}' \
+    -H 'Content-Type: application/json' \
+    https://localhost:3001/mutant
+```
+
 ### Deploy application to Google AppEngine
 This application is ready to be deployed to an AppEngine environment. To do that, run the following command (Google Cloud CLI must be configured in the environment):
 
