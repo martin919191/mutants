@@ -28,7 +28,7 @@ Provides an API to run tests against the MutantDetector. This is the only starti
 
 |Method|URL|Description|
 |------|---|-----------|
-|POST|/mutant|Scan a DNA sequence passed in the body of the request. A 200-OK response means the DNA is mutant, 403-Forbidden means it's human.|
+|POST|/mutant|Scan a DNA sequence passed in the body of the request. A 200-OK response means the DNA is mutant, 403-Forbidden means it's human. If the data sent is not an array of strings, the application will return 400-BadRequest.|
 |GET|/stats|Get scan statistics.| 
 
 Default port is 3001, but it can be changed by setting environment variable `PORT` or `HTTP_PORT` with the new desired port.
