@@ -4,8 +4,7 @@
   "description": "Application to help Magneto find new mutants based on DNA sequence.",
   "main": "index.js",
   "scripts": {
-    "start": "node lib/mutants.js",
-    "deploy": "gcloud app deploy"
+    "start": "node lib/mutants.js"
   },
   "repository": {
     "type": "git",
